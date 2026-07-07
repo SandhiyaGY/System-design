@@ -1,0 +1,9 @@
+Low Level Design - LLD
+
+- It majorly focuses on classes and objects within a system
+- It gives a best structured way to implement the code
+
+Advantages:
+- Helps to write ckean code
+- Code should be scalable,flexible and mainaitable 
+- Code should be reusable and easy to test

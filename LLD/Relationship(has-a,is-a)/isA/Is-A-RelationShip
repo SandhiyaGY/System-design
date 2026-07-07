@@ -1,0 +1,14 @@
+Is a RelationShip:
+
+- It refers to the Inheritance.
+
+- It means that one class is a specialized version of another class. The specialized class (subclass/child) inherits all the fields and behaviors of the more general class (superclass/parent).
+
+Key Features:
+
+1. Code reusablity
+
+2. Polymorphism
+
+3. Directional - Inheritance flows one way. A Car is a Vehicle, but a Vehicle is not necessarily a Car
+

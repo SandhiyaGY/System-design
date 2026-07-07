@@ -1,0 +1,20 @@
+Has a Relationship:
+
+A way to combine simpler classes to build more complex ones.
+(One class depends on another class)
+
+Eg : Combine small classes like wheel,engine to make a complex class Car
+
+TYPES:
+
+1.Composition (Strong Bond)
+
+- The contained object cannot exist without the owning object. If the main object is destroyed, the inner object is also destroyed.
+
+Eg.A House has a Room. If you demolish the house, the room ceases to exist.
+
+2.Aggregation (Weak Bond)
+
+- The contained object can exist independently of the owning object. If the main object is destroyed, the inner object survives.
+
+Eg : A Department has a Professor. If the department closes down, the professor still exists and can join another department
