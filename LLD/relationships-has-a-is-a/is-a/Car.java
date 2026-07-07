@@ -1,4 +1,3 @@
-
 // Parent Class (Superclass)
 class Vehicle {
     int speed = 60;
