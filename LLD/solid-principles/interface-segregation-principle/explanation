@@ -1,0 +1,7 @@
+Interface Segregation Principle (ISP)
+
+- Interface Segregation Principle (ISP) states that “clients should not be forced to depend on
+interfaces they don't use. Instead of having one large interface with many methods, it's
+better to have multiple smaller, focused interfaces”.
+- That means, Interfaces should be such that the client should NOT implement unnecessary functions they do not
+need.

@@ -1,0 +1,27 @@
+SINGLE RESPONSIBILITY PRINCIPLE:
+
+- It ensure that one class must assign to one responsiblity or job
+- Its not like one class only have one method (It that cases we have to create mulitiple classes that makes not sensible) it groups related tasks in a singe class
+
+Violating SRP:
+
+- Lest say we have a Invoice class that calculates the total,save it to db,print it
+- Here single class is responsible for 3 jobs
+  1. Total Calulation
+  2. Save to DB
+  3. Print Invoice
+
+This violates SRP because:
+
+- If the tax calculation rules change, we need to modify the Invoice class.
+- If the database structure changes, we need to modify the Invoice class.
+- If the printing requirement changes, we need to modify the Invoice class.
+
+Solution:
+
+- Create seperate class for spcific jobs
+1.Invoice - Tax calculation
+2.InvoiceDao - DB operations
+3.InvoicePrinter - Printing the invoice
+ 
+- Here if want to modify some things like add Save to file , kust modify the InvoiceDao instead of modifying Invoice class

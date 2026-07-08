@@ -1,0 +1,12 @@
+SOLID PRINCIPLES
+
+- It provides the foundaundation to the design 
+- Anyone can create their own design but it must follow design principles to make the design flexible,reusable and maintainable
+
+SOLID stands for,
+
+S - Single Responsibility Principle
+O - Open for extension closed for Modification Principle
+L - Liskov Substitution Principle
+I - Interface Segregation Principle
+D - Dependency Inversion Principle

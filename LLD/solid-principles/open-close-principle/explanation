@@ -1,0 +1,27 @@
+Open/Closed Principle (OCP):
+
+- Open/Closed Principle(OCP) states that “A class should be open for extension but closed
+for modification”.
+- This means that new functionality can be added through extension (inheritance, composition, interfaces) rather
+than by modifying existing code.
+- As existing code is already tested and deployed in production, adding
+modifications would introduce an additional risk and require additional testing effort.
+
+Violating OCP:
+
+1. Modification Required: Every time we add a new type of save functionality(let’s say saveToMongoDB() ), we must modify the existing InvoiceDao class.
+2. Risk of Breaking Existing Code: Changes might introduce bugs in working functionality, i.e., the InvoiceDao class that is already deployed in the production environment.
+3. Testing Issues: Need to retest all existing functionality when adding new save operations.
+
+Follows OCP:
+
+1. Reduced risk: Existing tested code remains unchanged.
+2. Better maintainability: New features don't break existing functionality.
+3. Improved flexibility: Easy to add new behaviors without touching existing code.
+4. Enhanced testability: New extensions can be tested independently.
+5. Supports polymorphism: Enables dynamic behavior through interfaces and inheritance.
+
+Conclusion:
+
+By adhering to the Open/Closed Principle (OCP), developers can construct software architectures that are both
+adaptable and resilient, allowing them to evolve and expand without compromising existing functionalities.
