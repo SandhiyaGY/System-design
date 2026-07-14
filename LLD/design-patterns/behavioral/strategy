@@ -1,0 +1,15 @@
+STRATEGY DESIGN PATTERN:
+
+It is a behaviroal design pattern that define muliple algorithm, encapsulate their logic in dedicated class and enables changing an algorithm's behaviour at runtime
+
+Scenario:
+A vechicle class(Super class) with a method drive()- Maybe sports,normal,offroad mode
+1. When tow or more subclass like SportsVehichle,OffroadVehichle initialy have the same drive() - It creates CODE DUPLICATION. Since here there is only 2 classes its okay but if huge classes use the same drive() it takes more memory
+2. When the user what to modify the drive function for OffroadVehicle from sports to offroad ,the class have to modified it create TIGHT COUPLING 
+
+Solution:
+Have a interface DriveStrategy that contains abstract method drive()
+1. Muliple classes can implement the drive() in their classes -It will be helpfull for creating new Strategy like NormalDrive and more 
+2.We create Vechile class that has a reference of DriveStrategy
+Since it is an reference we can modify the DriveStrategies at runtime.
+

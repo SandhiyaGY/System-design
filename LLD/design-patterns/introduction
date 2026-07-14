@@ -1,0 +1,17 @@
+DESIGN PATTERNS:
+- A group of 4 people introduced 23 design patterns to solve the common problems in software development.
+(All these patterns follows SOLID principle)
+
+Types:
+
+1.Creational - 5
+- It handle on object creation 
+- It inculdes Singleton,Factory,Abstract Factory,Builder,Prototype
+
+2.Structural - 7
+- It focus on how classes and objects are composed to form larger structures.
+- It includes Adapter,Bridge,Composite,Decorator,Facade,Flyweight,Proxy
+
+3.Behavioral - 11
+- It focus on how the object behave (like how they are communicated and their responsiblities)
+- It includes Observer,Strategy,Command,Chain of Responsibility,State,Iterator,Mediator,Memento,Template Method,Visitor,Interpreter
