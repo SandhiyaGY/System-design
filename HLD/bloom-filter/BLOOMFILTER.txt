@@ -1,0 +1,37 @@
+BLOOM FILTER
+A space efficient and probabilistic data structure to check whether an element is present or not.
+
+USE CASE:
+Scenario- While login if the user enters the existing username it should return that “User already taken”
+Brute force : Binary search based on key
+Drawback : It takes more operations in huge data like 10 C billions
+Solution: Bloom filter
+
+HOW IT WORKS:
+It Has a fixed filter size “m” and have “k” hash functions
+1.INSERTION OPERATION
+While inserting the data instead of storing the actual values it shore the hash values
+It marks 1 in the bit array for the hash values
+ 2.LOOKUP OPERATION
+While searching the item if all the “k” hash values are 1 then it is “Probably present” otherwise “definitely not present”
+
+Why probably present and not definitely present?
+It may have a possibility of false positives (the item is not present int the set but it says the item is present based on the same hash values) that’s why it is called as probabilistic data structure 
+
+ADVANTAGES:
+1.Space efficient (Fast and use less memory)
+2.Works perfect invasive datasets
+
+OPTIMIZATION for Reducing the Collision(Two items have same hash value)
+
+1.Optimal number of hash functions 
+    
+k =ln(2).m/n
+
+k-optimal number of hash functions
+n-estimated number of inserted objects 
+m-array size
+
+2.Increase the Bit Array Size
+
+m = -(n * lg(p)) / (lg(2)^2)

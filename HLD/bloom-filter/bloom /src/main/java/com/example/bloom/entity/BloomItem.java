@@ -1,0 +1,36 @@
+package com.example.bloom.entity;
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "bloom_items")
+public class BloomItem {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String value;
+
+    public BloomItem() {
+    }
+
+    public BloomItem(String value) {
+        this.value = value;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+}
