@@ -1,3 +1,5 @@
+package lld.solidprinciples.dependencyinversionprinciple;
+
 // GOOD: This example follows the Dependency Inversion Principle (DIP)
 
 // Abstractions

@@ -1,0 +1,11 @@
+OBSERVER DESIGN PATTERN:
+
+-Observer ia a behavioral design pattern where i have a Observable(Publisher) class that notify the data changes to all its Observers(Subscribers)
+
+Types:
+
+1.Push model
+- Obserable push the data to the observers when data changed.
+
+2.Pull model
+- Observer have a reference of Observable class and it pulls the data using the reference when the data modified.
