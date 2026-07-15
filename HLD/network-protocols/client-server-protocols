@@ -1,0 +1,37 @@
+CLIENT - SERVER ARCHITECHTURE:
+
+1.Client sent the request to the Server.
+2.Server process the request and give response back to the client
+
+Protocals:
+
+1.HTTP:
+
+- Single Connection
+- Stands for hypertext transfer protocol
+- It reads the webpages and tranfer pages based on hypertext
+
+2.FTP
+
+- Stands for File Transfer Protocol
+- 2 Connections
+   1.Controller connection - Never Disconnect
+   2.Direct connection - May disconnect
+- FTP is not widely used because it is not encrypted (NOT SECURE)
+
+3.SMTP
+
+- Stands for Simple Mail Transfer Protocol
+- Used for email transfer
+- SMTP/IMAP are widely used than POP3 (Post Office Protocol) because Pop3 downloads the email and deletes it but IMAP reads it from the server
+- SMTP(Simple Mail Transfer Protocol)-Sends the email
+- IMAP(Internet Message Access Protocol)-Receive the email
+- There is a client to server happens while message transfering 
+- FLOW : Client -> MTA client ->MTA Server -> Client
+
+4.Web sockets
+
+- Its a bidirectional Client communicate with server and server communicate with client but not client to client thats why it is not peer to peer.
+- Used for chat applications like whatapp
+- Flow: User 1 send message to the server and server sends it to the User 1 and vice versa
+

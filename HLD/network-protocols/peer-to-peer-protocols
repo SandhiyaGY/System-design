@@ -1,0 +1,33 @@
+PEER TO PEER ARCHITECTURE:
+
+- Individual computers (peers) act as both clients and servers.
+
+Protocols:
+
+1.WebRTC
+
+- Stands for Web Real-Time Communication
+- It uses UDP.
+- Used for streaming like video class.
+- Data loss in video calls is not a big issue.
+
+TCP
+
+- Connetion oriented
+Flow:
+   - It order the packets.
+   - Create a virtual connetion with the server
+   - Send the packets
+   - Server receive the packet.
+   - If dataloss occured client ack to the client
+   - The client sent back to the server 
+- Used when dataloss is matters
+
+UDP
+
+- Connectionless oriented
+Flow:
+   - There is no order in the packets 
+   - Packets are sent randomly using multiple conntections at a time
+- Dataloss occurs
+- It is fast since it doesn't have single connection,no acknolegements. Thats why WebRTC is used.
