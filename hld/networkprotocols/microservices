@@ -1,0 +1,62 @@
+Architecture:
+
+- Architecture define the structure of the system
+- The main type of architecture are monolithic and microservices
+
+MONOLITHIC ARCHITECTURE:
+
+- It is a legacy architecture
+- Here all the services are defined under only 1 application
+- Example : Single application hold product service,order servce, payment service and more.
+
+Advantages:
+1.Transaction management is easy since all the data is in 1 DB
+
+Disadvantage:
+1.Difficult to scale(If payment service need to modify then entire code gets modified which leads to TIGHT COUPLING)
+2.IDE OVERLOAD - ide becomes slow when more files loaded
+
+MICROSERVICE ARCHITECTURE:
+
+- Here the application is decomposed into multiple micro(size vary based on use cases/services) services
+- Example: Product,payment,order have seperate service applications
+
+Advantages:
+1.All the disadvantages of monolithic are advantages of microservices
+
+Disadvantages:
+1.Application should be properly decomposed othervise it results in TIGHTLY COUPLED
+2.Difficult to manage the errors
+-There are 3 services s3,s2,s1
+-s2 depends on s2
+-s1 depends on s1
+-If s3 modified the logic
+-s1,s2 doesn't know where the error occurs(Actually occurs due to the change in s3)
+-tester found the error is from s2 then s2 found the error is because of s3 then everything is rectified->It make a longer process
+3.Trasaction Management becomes difficult because each service has its own db
+
+PHRASES OF DEVELOPING MICROSERVICES:
+
+1.Decomposition:
+-How the system is decomposed
+
+- By Buiness capablities
+- By subdomain
+
+  2.Database
+
+- Shared DB
+- Common DB
+
+  3.Communication
+
+- REST Api
+- Some other
+
+  4.Integeration(like microservices with the user)
+
+- API gateway
+  .
+  .
+  .
+  Last.Observablitiy Monitoring
