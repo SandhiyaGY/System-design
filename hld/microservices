@@ -43,6 +43,7 @@ PHRASES OF DEVELOPING MICROSERVICES:
 - By Buiness capablities
 - By subdomain
 
+Patterns used: Strangler,SAGA
   2.Database
 
 - Shared DB
@@ -60,3 +61,5 @@ PHRASES OF DEVELOPING MICROSERVICES:
   .
   .
   Last.Observablitiy Monitoring
+
+
